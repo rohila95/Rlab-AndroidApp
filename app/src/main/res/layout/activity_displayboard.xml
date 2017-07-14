@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".UI.DisplayboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taskbar"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="#bb3232"
+                android:textColor="#ffffff"
+                android:padding="5dp" />
+
+            <GridView
+                android:id="@+id/notesGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="2dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="2dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.10" />
+            <TextView
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:text="Reminders"
+                android:textColor="#000000" />
+
+            <ListView
+                android:id="@+id/reminders"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:showDividers="beginning">
+
+        <GridView
+            android:id="@+id/AvailGrid"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+    </LinearLayout>
+</LinearLayout>

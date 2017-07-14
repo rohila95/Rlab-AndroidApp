@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.CalenderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--<CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/calendarView"
+         />-->
+<ListView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/events"
+    android:layout_margin="25dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/plus"
+        android:id="@+id/addEvent"
+        app:fabSize="normal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="5dp" />
+</FrameLayout>

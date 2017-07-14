@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:id="@+id/addEventLayout"
+    android:padding="10dp">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:text="New Event"
+        android:gravity="center" android:padding="2sp" android:background="@color/available"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/eventName"
+        android:hint="Event Name" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:text="Once"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/once"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/day"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/week"
+            android:layout_weight="1" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days"
+        android:visibility="gone">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <CheckBox
+            android:text="Mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mon"
+             />
+
+        <CheckBox
+            android:text="Tues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tues" />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <CheckBox
+                android:text="Wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wed" />
+        <CheckBox
+            android:text="Thurs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thur" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+        <CheckBox
+            android:text="Fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fri" />
+
+        <CheckBox
+            android:text="Sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sat" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+        <CheckBox
+            android:text="Sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sun"
+            />
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_date_range_black_18dp"
+        android:visibility="gone"
+        android:id="@+id/calImg"/>
+    <TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/selectDate"
+        android:visibility="gone"
+        android:gravity="center"/>
+        </LinearLayout>
+    <TextView
+        android:text="Time :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_access_time_black_18dp"/>
+        <TextView
+            android:gravity="center"
+            android:hint="From"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/fromTime"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_access_time_black_18dp"/>
+        <TextView
+            android:gravity="center"
+            android:hint="To"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/toTime"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <Button
+        android:text="Add Reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addEventButton"
+         />
+</LinearLayout>

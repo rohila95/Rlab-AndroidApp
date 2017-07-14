@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "533887689865",
+    "firebase_url": "https://rlab-b895e.firebaseio.com",
+    "project_id": "rlab-b895e",
+    "storage_bucket": "rlab-b895e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533887689865:android:e58b34b375078c65",
+        "android_client_info": {
+          "package_name": "com.handson.odu.rlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533887689865-kphg6r1nh8dvd8fik9lf85m55rctuk5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjCncwIpRmDvQbmewBWVRYEGjm9Xx6aQI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+package com.handson.odu.rlab.model;
+
+/**
+ * Created by rgudipati on 1/9/2017.
+ */
+
+public class SimpleStudent {
+    private String userid;
+    private String username;
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+}
