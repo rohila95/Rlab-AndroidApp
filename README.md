@@ -31,7 +31,6 @@ This app is developed on Android studio 2.2.2.
 - Http components (4.2.1)
 - Cardview-v7 (23.4.0)
 - Android beacon library (2+)
-- Custom Calendar view (v1.0)
 - App compat-v7 (23.4.0)
 - Firebase client (2.5.1+)
 - Firebase messaging (9.4.0) 
